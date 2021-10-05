@@ -1,0 +1,108 @@
+
+.spinner {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  margin-top: -32vh;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
+  transform-origin: 50% 60%;
+  transform: perspective(200px) rotateX(26deg);
+  animation: spinner-wiggle 1.2s infinite;
+}
+.spinner:before,
+.spinner:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -4px;
+  box-sizing: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  opacity: .3;
+  border: inherit;
+  border-color: transparent;
+  animation: spinner-spin 1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 2s linear infinite;
+}
+
+.spinner:before {
+
+  border-top-color: #04b2d9;
+}
+
+.spinner:after {
+  border-top-color: #0481d0;
+  animation-delay: 2.8s;
+}
+
+@keyframes spinner-spin {
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-fade {
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+/* Code for the transition animation. */
+
+.cover {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	pointer-events: none;
+	opacity: 0;
+	background-color: black;
+}
+
+.cover.slide-in {
+
+	animation: slide-in 0.5s ease-in-out forwards;
+}
+
+.cover.slide-out {
+	animation: slide-out 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in{
+	0% {
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes slide-out{
+	0% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
