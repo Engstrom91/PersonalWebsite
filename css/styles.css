@@ -79,6 +79,7 @@ z-index: 2;
 
 .bg-dark {
 	background: radial-gradient(#0fa1fc 0%, #0488db 5%, #010e1f 100%);
+	min-height: 630px;
 }
 
 .bg-black {
