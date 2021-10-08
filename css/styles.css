@@ -286,6 +286,7 @@ z-index: 2;
 
 .container-skills{
 	height: 140vh;
+	min-height: 1350px;
 
 
 }
@@ -323,7 +324,7 @@ z-index: 2;
 }
 
 img {
-	display: block;
+
 	max-width: 100%;
 }
 
