@@ -171,17 +171,17 @@ z-index: 2;
 	
 }
 
-.doctor-mask {
+.receipt-mask {
 	position: relative;
 	width: 100%;
-	background: url("../img/DoctorReviewAPI.jpg");
+	background: url("../img/NicksReceipts-bg.jpg");
 	background-size: cover;
 	object-fit: cover;
 	background-attachment: fixed;
 	
 }
 
-.doctor-mask::before {
+.receipt-mask::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -190,7 +190,32 @@ z-index: 2;
 	height: 100%;
 	min-height: 900px;
 	background-repeat: no-repeat;
-	background: url("../img/doctor-mask.jpg") no-repeat center center; 
+	background: url("../img/receipt-mask.jpg") no-repeat center center; 
+	background-size: cover;
+	mix-blend-mode: multiply;
+	filter: invert(1);
+}
+
+.security-mask {
+	position: relative;
+	width: 100%;
+	background: url("../img/TeacherDatabase.jpg");
+	background-size: cover;
+	object-fit: cover;
+	background-attachment: fixed;
+	
+}
+
+.security-mask::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	min-height: 900px;
+	background-repeat: no-repeat;
+	background: url("../img/security-mask.jpg") no-repeat center center; 
 	background-size: cover;
 	mix-blend-mode: multiply;
 	filter: invert(1);
@@ -287,7 +312,7 @@ z-index: 2;
 
 .container-skills{
 	height: 140vh;
-	min-height: 1350px;
+	min-height: 1450px;
 
 
 }

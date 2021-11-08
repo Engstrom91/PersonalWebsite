@@ -101,6 +101,10 @@
 				<p>JavaScript</p>
 				</div>
 				<div class="logo">
+				<img loading="lazy" src="img/React-logo.png" alt="" />
+				<p>React JS</p>
+				</div>
+				<div class="logo">
 				<img loading="lazy" src="img/JSON-logo.png" alt=""/>
 				<p>JSON</p>
 				</div>
@@ -110,21 +114,33 @@
 				  
 			<div>
 			<div class="skills-category">
-					
 				<h3>Backend </h3>
-			<div class="logo"><img loading="lazy" src="img/Java-logo.png" alt=""/>
+				<div class="logo">
+				<img loading="lazy" src="img/Java-logo.png" alt=""/>
 				<p>Java</p>
 				</div>
 				<div class="logo">
-				<img loading="lazy" src="img/Spring-logo.png" alt="" />
+				<img loading="lazy" src="img/CSharp-logo.png" alt=""/>
+				<p>C#</p>
+				</div>
+				<div class="logo">
+				<img loading="lazy" src="img/Spring-logo.png" alt=""/>
 				<p>Spring Boot</p>
+				</div>
+				<div class="logo">
+				<img loading="lazy" src="img/SpringSecurity-logo.png" alt=""/>
+				<p>Spring Security</p>
+				</div>
+				<div class="logo">
+				<img loading="lazy" src="img/MySQL-logo.png" alt=""/>
+				<p>MySQL</p>
 				</div>
 				<div class="logo">
 				<img loading="lazy" src="img/H2-logo.png" alt=""/>
 				<p>H2</p>
 				</div>
 			<div class="logo">
-			<img loading="lazy" src="img/Hibernate-logo.png" alt="" />
+			<img loading="lazy" src="img/Hibernate-logo.png" alt=""/>
 				<p>Hibernate</p>
 				</div>
 			</div>
@@ -133,7 +149,7 @@
 			<div>
 			<div class="skills-category" style="height: 100%;"> 
 					
-			<h3 >Other tools</h3>
+			<h3>Other tools</h3>
 
 				<div class="logo"><img loading="lazy" src="img/Jenkins-logo.png" alt=""/>
 				<p>Jenkins</p>
@@ -164,8 +180,121 @@
 		</section>
 			
 			
-		<section id="projects" class="kagami-mask">
-		<h1 class="container-heading" style="margin-bottom: 10vh;">Frontend Projects</h1>
+			<section class="receipt-mask">
+			<h1 class="container-heading" style="margin-bottom: 10vh;">Java Projects</h1>
+				<h1 class="project-heading">Dr. Nick's Receipts</h1>
+				
+				  <div class="project-container">
+
+						
+				  <div class="split">
+
+						<img src="img/NicksReceipts.jpg" class="project-img">
+						
+				<div>
+					<div class="textbox-software">
+						<img loading="lazy" src="img/Java-logo.png" alt=""/>
+						<img loading="lazy" src="img/Spring-logo.png" alt=""/>
+						<img loading="lazy" src="img/Hibernate-logo.png" alt=""/>
+						<img loading="lazy" src="img/MySQL-logo.png" alt=""/>
+						<img loading="lazy" src="img/JSON-logo.png" alt=""/>
+					</div>
+					<div class="textbox-project">
+						<h2>About the project</h2>
+						<p >
+							I built this Spring MVC application to be able to demonstrate how the Swedish public health insurance works. Using this service, healthcare workers would be able to view a patient's prescriptions and decide which of
+							their costs should be covered by the insurance.							
+						</p>
+						<p>
+							The data for each patient is stored in a MySQL table which is accessed through the application's Spring repository. I developed a Controller class that returns relevant views to be rendered in the browser. The frontend was built using Thymeleaf.
+						</p>
+						<p>
+						Check it out on GitHub:
+						</p>
+						<footer>
+						<a href="https://github.com/Engstrom91/ReceiptApp" target="_blank" rel="noopener noreferrer" ><img loading="lazy" src="img/GitHub-logo.png" alt=""/></a>
+						</footer>
+						</div>
+						</div>
+
+					</div>
+				  </div>
+			</section>
+			
+			<section class="security-mask">
+
+				<h1 class="project-heading">McBain Security</h1>
+				  <div class="project-container">
+
+
+					<div class="split">
+						
+						<img src="img/TeacherDatabase.jpg" class="project-img">
+						<div>
+						
+						<div class="textbox-software">
+						<img loading="lazy" src="img/Java-logo.png" alt=""/>
+						<img loading="lazy" src="img/Spring-logo.png" alt=""/>
+						<img loading="lazy" src="img/Hibernate-logo.png" alt=""/>
+						<img loading="lazy" src="img/MySQL-logo.png" alt=""/>
+						<img loading="lazy" src="img/JSON-logo.png" alt=""/>
+						</div>
+						
+						<div class="textbox-project">
+						<h2>About the project</h2>
+						<p>
+							This Spring MVC application uses and end to end registration feature that I developed. The purpose of the application is to provide a way for managers at a company to have a secure platform for communicating with their 
+							employees. 
+							
+							<p>Users are able to register, log in and log out. When a new user is registered, their password is encrypted with the help of Spring Security. The data for this application is saved in MySQL tables and I have established a many to many relationship between the JPA entities to let administrators keep track of each user's roles in the company. </p>
+						</p>
+						<p>
+						  	Check it out on GitHub:
+						</p>
+						<footer>
+						<a href="https://github.com/Engstrom91/McBainSecurity" target="_blank" rel="noopener noreferrer" ><img loading="lazy" src="img/GitHub-logo.png" alt=""/></a>
+						</footer>
+						</div>
+						</div>
+					</div>
+				  </div>
+			</section>
+			
+			<section class="teacher-mask">
+
+				<h1 class="project-heading">Teacher Database</h1>
+				  <div class="project-container">
+
+
+					<div class="split">
+						
+						<img src="img/TeacherDatabase.jpg" class="project-img">
+						<div>
+						<div class="textbox-software">
+							<img loading="lazy" src="img/Java-logo.png" alt=""/>
+						</div>	
+						<div class="textbox-project">
+						<h2>About the project</h2>
+						<p>
+							The program uses the Java Stream API to perform operations on the data collection to filter out 
+							the items a user has requested. 
+							
+							<p>Doing this project was a good way to practice solving problems that actual businesses will have and to 
+							think about what functionality a customer would need. </p>
+						</p>
+						<p>
+						  	Check it out on GitHub:
+						</p>
+						<footer>
+						<a href="https://github.com/Engstrom91/TeacherDatabase" target="_blank" rel="noopener noreferrer" ><img loading="lazy" src="img/GitHub-logo.png" alt=""/></a>
+						</footer>
+						</div>
+						</div>
+					</div>
+				  </div>
+			</section>
+					<section id="projects" class="kagami-mask">
+		<h1 class="container-heading" style="margin-bottom: 10vh;">Web Projects</h1>
 			<h1 class="project-heading">Kagami</h1>	
 				<div class="project-container">
 
@@ -273,84 +402,6 @@
 					</div>
 				  </div>
 			</section>
-			
-			<section class="doctor-mask">
-			<h1 class="container-heading" style="margin-bottom: 10vh;">Backend Projects</h1>
-				<h1 class="project-heading">Doctor Review API</h1>
-				
-				  <div class="project-container">
-
-						
-				  <div class="split">
-
-						<img src="img/DoctorReviewAPI.jpg" class="project-img">
-						
-				<div>
-					<div class="textbox-software">
-						<img loading="lazy" src="img/Java-logo.png" alt=""/>
-						<img loading="lazy" src="img/Spring-logo.png" alt=""/>
-						<img loading="lazy" src="img/H2-logo.png" alt=""/>
-						<img loading="lazy" src="img/Hibernate-logo.png" alt=""/>
-						<img loading="lazy" src="img/JSON-logo.png" alt=""/>
-					</div>
-					<div class="textbox-project">
-						<h2>About the project</h2>
-						<p >
-							I wanted to get better at solving problems for actual organizations so I developed an application that would let patients in a hospital rate their doctors. The managers at the hospital could then look at the feedback and give
-							suggestions to the doctors for how to become more service minded.
-						</p>
-						<p>
-							This CRUD application stores the doctor objects in a H2 database and they are accessed via JPA.
-						
-							I followed the MVC design pattern to build this application.
-						</p>
-						<p>
-						Check it out on GitHub:
-						</p>
-						<footer>
-						<a href="https://github.com/Engstrom91/DoctorReviewAPI" target="_blank" rel="noopener noreferrer" ><img loading="lazy" src="img/GitHub-logo.png" alt=""/></a>
-						</footer>
-						</div>
-						</div>
-
-					</div>
-				  </div>
-			</section>
-			
-			<section class="teacher-mask">
-
-				<h1 class="project-heading">Teacher Database</h1>
-				  <div class="project-container">
-
-
-					<div class="split">
-						
-						<img src="img/TeacherDatabase.jpg" class="project-img">
-						<div>
-						<div class="textbox-software">
-							<img loading="lazy" src="img/Java-logo.png" alt=""/>
-						</div>	
-						<div class="textbox-project">
-						<h2>About the project</h2>
-						<p>
-							The program uses the Java Stream API to perform operations on the data collection to filter out 
-							the items a user has requested. 
-							
-							<p>Doing this project was a good way to practice solving problems that actual businesses will have and to 
-							think about what functionality a customer would need. </p>
-						</p>
-						<p>
-						  	Check it out on GitHub:
-						</p>
-						<footer>
-						<a href="https://github.com/Engstrom91/TeacherDatabase" target="_blank" rel="noopener noreferrer" ><img loading="lazy" src="img/GitHub-logo.png" alt=""/></a>
-						</footer>
-						</div>
-						</div>
-					</div>
-				  </div>
-			</section>
-			
 			<section id="contact" class="bg-contact">
 			<h1 class="project-heading">Get in touch</h1>
 			  <div class="container" style="height: 50vh;">
