@@ -199,7 +199,7 @@ z-index: 2;
 .security-mask {
 	position: relative;
 	width: 100%;
-	background: url("../img/TeacherDatabase.jpg");
+	background: url("../img/Security-bg.jpg");
 	background-size: cover;
 	object-fit: cover;
 	background-attachment: fixed;
