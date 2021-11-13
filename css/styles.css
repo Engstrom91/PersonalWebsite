@@ -1,6 +1,3 @@
-/*Self-coded */
-
-
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -79,11 +76,11 @@ z-index: 2;
 
 .bg-dark {
 	background: radial-gradient(#0fa1fc 0%, #0488db 5%, #010e1f 100%);
-	min-height: 630px;
 }
 
 .bg-black {
-	background: radial-gradient(#000 0%, #000 45%, #121212 100%);
+	height: 100%;
+	background-color: black;
 }
 
 .bg-contact {
@@ -268,11 +265,10 @@ z-index: 2;
 }
 
 .intro-container{
-
 	height: 105vh;
 	margin-inline: auto;
 	 width: calc(100% - 25rem);
-		display: grid;
+	display: grid;
 	place-items: center;
 }
 
@@ -393,7 +389,6 @@ img {
 
 .contact-main{
 	margin-left: 3em;
-	
 }
 
 .contact-position{
@@ -603,23 +598,9 @@ ul:hover li a{
 	display: none;
 }
 
-@media (max-width: 1600px) {
-  .tm-sidebar {
-    width: 30%;
-    max-width: none;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
 .navbar-toggler {
   display: none;
 }
-
-
-
-
-
-
 
 .projects-heading{
 	margin-left: 40vw;
@@ -646,33 +627,6 @@ ul:hover li a{
 	
 }
 
-
-
-
-/*Useful for placing items to the right of the sidebar*/
-/*.skill-wrap {
-  width: calc(100% - 400px);
-  margin-left: auto;
-  margin-right: 0;
-}
-
-
-.inner-language {
-    width: 28vw;
-    margin: 2;
-    vertical-align: top;
-    z-index: 3;
-	float: left;
-}
-
-.logos {
-	min-height: 130px;
-    height: auto;
-    margin-right: 7%;
-    padding: 2px;
-    vertical-align: bottom;
-	display: inline-block;
-} */
 
 
 
